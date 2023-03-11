@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@900&display=swap');
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: -4px;
+    top: -10px;
+    align-self:normal;
+    z-index:3 ;
+}
+
+.fitandfocused {
+    color:white;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fitandfocused:hover {
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    left: 38rem;
+    top: 0.2rem;
+    position: relative;
+}
+
+.navbar li {
+    padding-left: 5px;
+}
+  .navbar a {
+    position: relative;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Add a responsive layout - will stack links vertically on small screens */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+.maincontent{
+    height: 100vh;
+    justify-content: center;
+}
+
+.maincontent .text {
+    position: absolute;
+    top: 20rem;
+    left: 25rem;
+    display: flex;
+    justify-content: center;
+
+}
+.maincontent h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Golos Text', sans-serif;
+    text-align: center;
+    
+}
+
+.maincontent h1 p {
+    font-size:19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 300%; /* Make the slide container three times the width of the viewport */
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 33.33%; /* Divide the width of the slide container by the number of images */
+  height: 100vh;
+  object-fit: cover; /* Scale the image to cover the entire slide */
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #555;
+}
+
+
+
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.content2 {
+  height: 50vh;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+}
+
+.image-container img {
+  width: calc(33.33% - 0px);
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.content2txt{
+  color: white;
+}
+
+.content2txt .workout{
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 58rem;
+  left: 8rem;
+  font-family: 'Golos Text', sans-serif;
+}
+
+
+.content2txt .fittips{
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 58rem;
+  left: 38rem;
+  font-family: 'Golos Text', sans-serif;
+}
+
+.content2txt .nutri{
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 58rem;
+  left: 65rem;
+  font-family: 'Golos Text', sans-serif;
+}
+.button-24 {
+  border: 1px solid white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family:
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: black;
+  background-position: 0 0;
+  color: white;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer nav a {
+  color:  white;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+}
+
+footer nav a:hover{
+  cursor: pointer;
+}
+
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+footer p{
+  padding-top: 10px;
+  font-family: 'Roboto Slab', serif;
+}
